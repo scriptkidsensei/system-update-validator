@@ -39,6 +39,7 @@ while [[ $# -gt 0 ]]; do
             ;;
         --ubuntu)
             ubuntu_mode=true
+            sudo apt-get install debootstrap
             check="Ubuntu"
             shift
             ;;
